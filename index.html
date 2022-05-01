@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body >
+        <div id="upper">
+            <div class="container" >
+                <h2 class="heading">Metric/Imperial unit conversion</h2>
+                    <input type="text"  id="num" class="form-control" required placeholder="Enter a number">
+                    <button id="submit" onclick="getVal();feetAndMeter(); literAndGallon();kgAndpound();">Calculate</button>
+            </div>
+
+        </div>
+       
+        <div id="lower">
+            <div class="container">
+                <div class="group">
+                    <p class="units">Length (Meter/Feet)</p>
+                    <p class="conversion" id="meetFeet"></p>    
+                </div>
+                <div class="group">
+                    <p class="units">Volume (Liters/Gallons)</p>
+                    <p class="conversion" id="literGallon"></p>    
+                </div>
+                <div class="group">
+                    <p class="units">Mass (Kilograms/Pounds)</p>  
+                    <p class="conversion" id="kgPounds"></p>    
+                </div>
+  
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
+
